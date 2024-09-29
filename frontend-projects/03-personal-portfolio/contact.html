@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <section class="header__section">
+                <nav class="header__nav">
+                    <p class="header__p header__p--style">Isaac Alvarez</p>
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <label>
+                                <span class="material-symbols-outlined light-mode">light_mode</span>
+                                <span class="material-symbols-outlined dark-mode">dark_mode</span>
+                                <input type="checkbox" class="header__input">
+                            </label>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="index.html">Home</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="articles.html">Articles</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="header__title">
+                <h1 class="header__h1">Frontend Developer</h1>
+                <p class="header__p">html only with proper layout, no styling</p>
+            </section>
+        </div>
+    </header>
+    <main class="main main--form">
+        <h2 class="main__h2 main__h2--style">Contact Form</h2>
+        <form class="main__form">
+            <fieldset class="main__fieldset">
+                <legend>Basic Information</legend>
+                <div class="main__contact">
+                    <label class="main__label">Name
+                        <input class="main__input" name="name" type="text">
+                </div>
+                <div class="main__contact">
+                    <label class="main__label">Lastname
+                        <input class="main__input" name="lastname" type="text">
+                </div>
+                <div class="main__contact">
+                    <label class="main__label">Age
+                        <input class="main__input" name="age" type="number">
+                    </label>
+                </div>
+                <div class="main__contact">
+                    <label class="main__label">Email
+                        <input class="main__input" name="email" type="email">
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="main__fieldset">
+                <legend>Contact Information</legend>
+                <div class="main__contact">
+                    <label class="main__label">Type of user
+                        <select class="main__select" name="user">
+                            <option value="follower">Follower</option>
+                            <option value="company">Company</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="main__contact">
+                    <textarea rows="5" class="main__textarea" placeholder="Write something here"></textarea>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

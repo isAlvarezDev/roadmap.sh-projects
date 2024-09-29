@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+nav,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+a,
+section,
+article,
+main,
+header,
+footer,
+q,
+cite,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --bg-color: #f9f9ff;
+    --primary-color: #d6f3ff;
+    --secondary-color: #001b3e;
+    --text-color: #2e3036;
+    --figcaption-color: #74777f;
+    --wrapper-bg: #FFFFFF;
+    font-family: "Merriweather";
+    background-color: var(--bg-color);
+}
+
+/* HEADER SECTION */
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 35dvh;
+    margin: 0 auto;
+    container-name: header;
+    container-type: inline-size;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__item {
+    list-style-type: none;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.light-mode {
+    display: none;
+}
+
+.header__title {
+    margin: auto;
+}
+
+.header__h1 {
+    color: var(--secondary-color);
+}
+
+.header__p {
+    color: var(--figcaption-color);
+}
+
+.header__p--style {
+    font-weight: 900;
+    color: var(--text-color);
+}
+
+.header__input {
+    display: none;
+}
+
+/* HEADER SECTION ENDS */
+
+/* MAIN, ASIDE SECTION */
+
+.wrapper {
+    display: flex;
+    gap: 16px;
+    height: fit-content;
+    background-color: var(--wrapper-bg);
+    margin: 0 auto;
+}
+
+.aside__article {
+    border-bottom: 2px solid var(--text-color);
+    margin: 10px 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--text-color)
+}
+
+.main__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main__second-section {
+    flex-grow: 1;
+}
+
+.aside__abbr[title="Cumulative Grade Point Average"] {
+    text-decoration: none;
+}
+
+.aside__dfn {
+    font-style: normal;
+}
+
+.aside__p {
+    margin-bottom: 12px;
+}
+
+.aside__item {
+    list-style-type: "- "
+}
+
+/* MAIN, ASIDE SECTION ENDS */
+
+/* FOOTER SECTION */
+
+.footer {
+    
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    container-name: footer;
+    container-type: inline-size;
+}
+
+.footer__section {
+    display: flex;
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.footer__article {
+    border: 1px solid var(--bg-color);
+    border-radius: 2rem;
+    padding: 15px;
+}
+
+.footer__figcaption {
+    color: var(--figcaption-color);
+    margin-top: 12px;
+}
+
+.footer__p {
+    text-align: center;
+    color: var(--bg-color);
+}
+/* FOOTER SECTION ENDS */
+
+/* SAME SELECTORS, PROPERTIES, VALUES */
+
+.header__nav,
+.wrapper,
+.footer {
+    padding: 1rem 1.5rem;
+}
+
+.aside__h2,
+.main__h2,
+.footer__h2 {
+    margin-top: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.aside__h2,
+.main__h2 {
+    color: var(--secondary-color);
+}
+
+p,
+q,
+a,
+ul,
+legend,
+figcaption,
+textarea
+{
+    line-height: 1.5;
+    text-wrap: pretty;
+    font-size: clamp(.7rem, 3vw, .9rem);
+}
+
+p,
+li
+{
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1,
+h2 {
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+}
+
+h2 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 400;
+}
+
+.header__wrapper, .footer__wrapper, .wrapper {
+    margin: auto;
+    max-width: 68.75rem;
+}
+
+/* SAME SELECTORS, PROPERTIES, VALUES ENDS*/
+
+/*CONTAINER QUERIES SECTION*/
+
+@container header (max-width: 440px) {
+
+    .header__nav {
+        flex-direction: column;
+    }
+}
+
+@container footer (max-width: 440px) {
+    .footer__section {
+        flex-direction: column;
+        gap: 1.4rem;
+        margin: 1.5rem 0;
+    }
+
+    .footer__h2 {
+        margin-bottom: 0;
+    }
+}
+
+/*CONTAINER QUERIES SECTION ENDS*/
+
+/* QUERIES SECTION */
+
+@media screen and (max-width: 440px) {
+    .header {
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 31.25rem) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .aside {
+        text-align: center;
+    }
+
+    .aside__article {
+        border-bottom-width: 1px;
+    }
+
+    .main__h2 {
+        text-align: center;
+    }
+
+    .main__p,
+    .main__link,
+    .aside__p {
+        padding: 0 8px;
+        text-align: center;
+    }
+    
+    .main__link {
+        display: block;
+    }
+
+    .aside__item {
+        list-style-type: none;
+    }
+}
+
+/* QUERIES SECTION ENDS */
+
+/* DARK THEME */
+
+:has(.header__input:checked) body {
+    animation: dark-theme .7s alternate both;
+}
+
+:has(.header__input:checked) .light-mode {
+    display: block;
+}
+
+:has(.header__input:checked) .dark-mode {
+    display: none;
+}
+
+
+/* DARK THEME ENDS*/
+
+
+/* ANIMATION SECTION*/
+
+@keyframes dark-theme {
+    from {}
+
+    to {
+        --bg-color: #191c20;
+        --primary-color: #284777;
+        --secondary-color: #aac7ff;
+        --figcaption-color: var(--text-color);
+        --text-color: #e2e2e9;
+        --wrapper-bg: #2e3036;
+    }
+}
+
+/* ANIMATION SECTION ENDS*/
+
+
+
+/* CONTACT.HTML PAGE */
+
+/* FORM SECTION */
+
+.main--form {
+    gap: 0;
+}
+
+.main__form {
+    height: fit-content;
+}
+
+.main__fieldset {
+    background-color: var(--wrapper-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin: 1rem auto;
+    gap: 14px;
+    padding: 12px 1rem;
+}
+
+.main__h2--style {
+    margin-top: 1.5rem; 
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+}
+
+.main__contact {
+    width: 100%;
+}
+
+.main__label {
+    font-size: clamp(.8rem, 3vw, 1rem);
+    display: block;
+}
+
+.main__input {
+    width: 100%;
+}
+
+.main__input, .main__select, .main__textarea {
+    background-color: var(--primary-color);
+    padding: 9px 0;
+    padding-left: 6px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.main__select {
+    width: fit-content;
+    padding: 4px 0;
+}
+
+.main__textarea {
+    font-family: "Merriweather";
+    min-width: 100%;
+    letter-spacing: 2px;
+    resize: none;
+    padding-left: 4px;
+}
+/* FORM SECTION END */
+
+/* CONTACT.HTML PAGE ENDS */
