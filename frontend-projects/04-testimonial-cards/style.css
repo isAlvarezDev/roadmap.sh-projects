@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body, img, p, h1, h2, main, section, i, div {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --bg-color: #f8f8ff;
+    --box-shadow-color: #1e1e1e;
+    --purple-quotation-mark: #7E1159;
+    --green-quotation-mark: #49B054;
+    --blue-quotation-mark: #4959A3;
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 1300px;
+    margin: auto;
+    container-name: main;
+    container-type: inline-size;
+}
+
+h1 {
+    padding: 1rem;
+    color: var(--purple-quotation-mark);
+}
+
+h1,.main__h2 {
+    text-align: center;
+}
+
+.main__h2 {
+    font-weight: 200;
+    font-style: italic;
+    color: var(--box-shadow-color);
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+    text-wrap: pretty;
+    line-height: 1.35;
+}
+
+.card__wrapper {
+    box-shadow: 0 0 5px var(--box-shadow-color);
+    flex-basis: 310px;
+    border-radius: 9px;
+}
+
+.card__quotation-mark {
+    font-size: 2.5rem;
+    padding: 0 .5rem;
+    margin-top: 1rem;
+}
+
+.card__quotation-mark--green-color {
+    color: var(--green-quotation-mark);
+}
+
+.card__quotation-mark--purple-color {
+    color: var(--purple-quotation-mark);
+}
+
+.card__quotation-mark--blue-color {
+    color: var(--blue-quotation-mark);
+}
+
+.card__description {
+    padding: 0 1rem;
+}
+
+.card__profile-picture {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    translate: 0 10px;
+}
+
+.card__profile-picture--position {
+    object-position: -5px 1px;
+}
+
+.card__wave {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 4rem 4rem 5rem;
+    border-radius: 0 0 9px 9px;
+}
+
+.card__wave--green-background {
+    background-image: url("img/green-wave.svg");
+}
+
+.card__wave--purple-background {
+    background-image: url("img/purple-wave.svg");
+}
+
+.card__wave--blue-background {
+    background-image: url("img/blue-wave.svg");
+}
+
+.card__name, .card__links {
+    translate: 0 2.2rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+.card__name {
+    font-size: 1.2rem;
+}
+
+.fa-brands {
+    text-decoration: none;
+    color: inherit;
+    translate: 0 10px;
+    margin: 0 2px;
+}
+
+@container main (max-width: 650px) {
+    .card {
+        gap: 1.5rem;
+    }
+}
