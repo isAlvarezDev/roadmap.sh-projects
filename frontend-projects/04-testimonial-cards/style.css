@@ -8,11 +8,10 @@ body, img, p, h1, h2, main, section, i, div {
 }
 
 body {
-    --bg-color: #f8f8ff;
-    --box-shadow-color: #1e1e1e;
-    --purple-quotation-mark: #7E1159;
+    --wave-text: #f8f8ff;
+    --purple-quotation-mark: #BF117F;
     --green-quotation-mark: #49B054;
-    --blue-quotation-mark: #4959A3;
+    --blue-quotation-mark: #48e;
     background-color: var(--bg-color);
     font-family: sans-serif;
 }
@@ -118,7 +117,7 @@ h1,.main__h2 {
 .card__name, .card__links {
     translate: 0 2.2rem;
     text-align: center;
-    color: var(--bg-color);
+    color: var(--wave-text);
 }
 
 .card__name {
@@ -135,5 +134,33 @@ h1,.main__h2 {
 @container main (max-width: 650px) {
     .card {
         gap: 1.5rem;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --bg-color: #f8f8ff;
+        color: var(--box-shadow-color);
+        --box-shadow-color: #1e1e1e;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --bg-color: #111;
+        color: var(--box-shadow-color);
+        --box-shadow-color: #f8f8ff;
+    }
+
+    h1 {
+        color: var(--blue-quotation-mark);
+    }
+
+    .card__wrapper {
+        background-color: #2e2e2f;
+    }
+
+    .card__profile-picture {
+        border: 3px solid var(--box-shadow-color);
     }
 }
