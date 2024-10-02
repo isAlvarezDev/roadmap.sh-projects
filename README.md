@@ -7,3 +7,4 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Basic HTML Website](https://roadmap.sh/projects/basic-html-website)
 - [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)
 - [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
+- [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
