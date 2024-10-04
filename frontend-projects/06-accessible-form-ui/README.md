@@ -11,7 +11,7 @@ The goal of this project is to not only help you practice your HTML and CSS but 
 
 You should read up on accessibility guidelines and best practices before starting this project. However, here are some key points to keep in mind while creating an accessible form UI:
 
-+ Labeling: Ensure that each form field has a corresponding <code><label></code> element that is clearly associated with the field using the <code>for</code> attribute.
++ Labeling: Ensure that each form field has a corresponding <code>\<label\></code> element that is clearly associated with the field using the <code>for</code> attribute.
 
 + Focus State: Style the focus state of each input field so that users navigating with a keyboard can easily see which field is currently active.
 
