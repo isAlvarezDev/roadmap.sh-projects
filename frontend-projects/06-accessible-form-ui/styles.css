@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, p, input, a, div, form, label {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    font-family: arial;
+}
+
+.form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 2px solid #bbbe;
+    border-radius: 6px;
+    backdrop-filter: blur(8px);
+}
+
+h1 {
+    margin-bottom: .4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.form__input {
+    margin: 8px 0;
+    border-radius: 1.5rem;
+    border: 2px solid #aaaa;
+    padding: 11px 12px;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.form__input::placeholder {
+    color: inherit;
+}
+
+.form__label {
+    margin-top: 8px;
+    margin-bottom: 1px;
+}
+
+:is(.form__input,.form__checkbox, .form__link, .form__submit, .form__label):focus {
+    border: none;
+    outline: 2px solid #FFFFFF;
+}
+
+.form__input--name::placeholder {
+    background-image: url("img/person.svg");
+}
+
+.form__input--email::placeholder {
+    background-image: url("img/email.svg");
+}
+
+.form__input--password::placeholder {
+    background-image: url("img/lock-solid.svg");
+    background-size: contain;
+}
+
+:is(.form__input--name, .form__input--email, .form__input--password)::placeholder {
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.form__check {
+    display: flex;
+    padding: 1rem .5rem;
+    font-size: .9rem;
+    gap: 2rem;
+}
+
+.form__checkbox {
+    border: none;
+}
+
+.form__link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.form__submit {
+    padding: 10px 12px;
+    border-radius: 1rem;
+    border: 2px solid #bbb;
+    margin: 4px 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.form__submit:hover {
+    background-color: #cbcbcb;
+    transition: background-color .4s;
+}
+
+.form__p {
+    padding-top: .8rem;
+    text-align: center;
+}
+
+.form__link--bold {
+    font-weight: 600;
+    margin-left: 1rem;
+}
