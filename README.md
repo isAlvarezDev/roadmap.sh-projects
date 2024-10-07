@@ -9,3 +9,4 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)
 - [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)
 - [Accessible Form UI](https://roadmap.sh/projects/accessible-form-ui)
+- [Image Grid Layout](https://roadmap.sh/projects/image-grid)
