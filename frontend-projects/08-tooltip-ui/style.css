@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body, nav, main, a, li, ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    --bg-color: #303030;
+    --color: #eee;
+    --nav-bg-color: #1576be;
+    --tooltip-bg: #4682b4;
+    background-color: var(--bg-color);
+    color: var(--color);
+    margin: auto;
+    font-family: system-ui
+}
+
+header {
+    background-color: var(--nav-bg-color);
+}
+
+nav {
+    padding: .7rem;
+    max-width: 1000px;
+    font-weight: 700;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover {text-decoration: underline}
+
+a:hover::after {
+    border-radius: 8px;
+    padding: 10px 1rem;
+    box-shadow: 0 0 5px var(--nav-bg-color);
+    animation-name: translate-after;
+}
+
+a:hover::after, a:hover::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: max-content;
+    background-color: var(--tooltip-bg);
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+a:hover::before {
+    content: "";
+    clip-path: polygon(41% 0%, 15% 100%, 92% 100%);
+    padding: 12px;
+    width: 16px;
+    animation-name: translate-before
+}
+
+.nav__first-link:hover::after {
+    content: "To the beginning";
+    animation-timing-function: ease;
+}
+
+.nav__second-link:hover::after {
+    content: "Here is everything I have built";
+    animation-timing-function: ease-in;
+}
+
+.nav__third-link:hover:after {
+    content: "My thoughts are here";
+    animation-timing-function:ease-out;
+}
+
+@keyframes translate-after {
+    0% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 45px);
+    }
+}
+
+@keyframes translate-before {
+    0% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 33px);
+    }
+}
