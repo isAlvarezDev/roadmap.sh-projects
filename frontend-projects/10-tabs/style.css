@@ -1,0 +1,39 @@
+:root {
+    color-scheme: dark light;
+    box-sizing: border-box;
+}
+
+body, main, div, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    border: 1px solid light-dark(#222, #e7e7e7);
+    max-width: fit-content;
+    margin: 1rem auto;
+}
+
+.main__ul {
+    display: flex;
+}
+
+.main__li {
+    list-style: none;
+    padding: 12px;
+    cursor: pointer;
+    background-color: light-dark(#222, #e7e7e7);
+    color: light-dark(#e7e7e7, #222)
+}
+
+.main__li:hover {
+    background-color: #a1a1a1;
+}
+
+.main__li--border {
+    border-bottom: 3px solid #48b;
+}
+
+h1, .main__p {
+    text-align: center;
+}
