@@ -1,0 +1,59 @@
+:root {
+    color-scheme: dark light;
+}
+
+body, div, span, img, p, button {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-modal {
+    position: fixed;
+    margin: 20px;
+    bottom: 0;
+    right: 0;
+    background-color: light-dark(#9b9b9b, #2b2b2b);
+    color: light-dark(#000, #e8e8e8);
+    width: fit-content;
+}
+
+.modal__cancel {
+    position: absolute;
+    right: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+span {
+    padding: 10px;
+    cursor: pointer;
+}
+
+span:hover {
+    color: light-dark(#fff, #fff);
+    background-color: #FF0235;
+}
+
+.modal__button {
+    display: block;
+    margin: auto;
+    padding: 8px 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: light-dark(#FFFFFF, #090909);
+    margin-bottom: 8px;
+}
+
+.modal__button:hover {
+    background-color: light-dark(#D9D9D9, #171717);
+}
+
+.modal__message {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
