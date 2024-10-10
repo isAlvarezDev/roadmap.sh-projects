@@ -15,6 +15,7 @@ body {
     font-family: system-ui;
     background-color: light-dark(var(--light-bg-color), var(--dark-bg-color));
     color: light-dark(var(--dark-bg-color), var(--light-bg-color));
+    padding: 10px;
 }
 
 circle, line {
@@ -42,11 +43,9 @@ h1, .changelog__subtitle {
 
 .changelog__section {
     margin-top: 1.5rem;
-}
-
-.changelog__info {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: auto;
     justify-items: center;
     align-items: end;
     place-content: center;
@@ -60,8 +59,9 @@ h1, .changelog__subtitle {
     justify-self: start;
 }
 
-.changelog__info--center{
+.changelog__last-svg{
     display: flex;
+    justify-content: center;
 }
 
 .changelog__button {
@@ -79,4 +79,8 @@ h1, .changelog__subtitle {
 .changelog__button:hover {
     background-color: var(--gray-color);
     transition: background-color .3s;
+}
+
+.changelog__subtitle, .changelog__date, .changelog__description {
+    font-size: clamp(.77rem, 4vw, 1rem);
 }
