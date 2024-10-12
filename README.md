@@ -15,3 +15,4 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Tabs](https://roadmap.sh/projects/simple-tabs)
 - [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
 - [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
+- [Accordion](https://roadmap.sh/projects/accordion)
