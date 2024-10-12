@@ -1,0 +1,50 @@
+:root {
+    color-scheme: light dark;
+    font-family: system-ui;
+    box-sizing: border-box;
+    --error-color: light-dark(#c01, #F0395D);
+}
+
+body, div, textarea, p, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+div {
+    position: relative;
+    width: fit-content;
+}
+
+textarea {
+    min-width: 330px;
+    max-width: 330px;
+    padding: 10px 14px;
+    resize: none;
+    position: relative;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+p {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.restringed-textarea:focus-visible {
+    border: none;
+    color: var(--error-color);
+    outline: 2px solid var(--error-color);
+}
+
+.restringed-p {
+    color: var(--error-color);
+}
