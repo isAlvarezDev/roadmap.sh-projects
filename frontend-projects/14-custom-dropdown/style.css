@@ -1,0 +1,64 @@
+:root {
+    color-scheme: light dark;
+    box-sizing: border-box;
+}
+
+body, div, svg, p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 30px 20px;
+}
+
+.default-state{
+    position: relative;
+    max-width: fit-content;
+    align-content: center;
+    margin: auto;
+}
+
+input {
+    padding: 6px;
+    cursor: auto;
+}
+
+svg {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width:20px;
+    height: auto;
+}
+
+.close-state {
+    display: none;
+    border: 2px solid light-dark(#111, #eee);
+    margin-top: 2px;
+    animation: appear .5s forwards;
+}
+
+.open-state-visible {
+    display: block;
+}
+
+.input-value {
+    text-align: center;
+    padding: 10px 0;
+    user-select: none;
+    border-top: 1px solid light-dark(#111, #eee);
+}
+
+.input-value:hover {
+    background-color: light-dark(#dadada, #555);
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
