@@ -1,0 +1,60 @@
+:root {
+    color-scheme: light dark;
+    box-sizing: border-box;
+    font-family: system-ui;
+    --task-color: light-dark(#555,#bbb);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-wrapper {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    width: fit-content;
+}
+
+input {
+    padding: 5px 1.6rem 5px .4rem;
+}
+
+.enter-img {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.task {
+    max-width: 500px;
+    margin: auto;
+}
+
+svg {
+    fill: light-dark(#111, #eee);
+}
+
+svg:hover {
+    fill: var(--task-color);
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--task-color);
+}
+
+.task__checkbox {
+    accent-color: var(--task-color);
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--task-color);
+}

@@ -17,3 +17,4 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
 - [Accordion](https://roadmap.sh/projects/accordion)
 - [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown)
+- [Task Tracker](https://roadmap.sh/projects/task-tracker-js)
