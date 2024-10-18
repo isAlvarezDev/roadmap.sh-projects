@@ -10,10 +10,18 @@ section, .temperature-result {
 input {
     field-sizing: content;
     min-width: 3.5rem;
-    font-size: .73rem;
 }
 
 .temperature-result {
     color: light-dark(#272, #7d5);
     margin-top: 2rem;
+}
+
+.input-temperature, #from-unit, #to-unit, .btn-convert {
+    margin-left: 14px;
+    padding: 4px;
+}
+
+.input-temperature {
+    margin-left: 0;
 }
