@@ -1,0 +1,185 @@
+:root {
+    color-scheme: light dark;
+    box-sizing: border-box;
+}
+
+body,svg, p, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100dvh;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.popup-container > svg {
+    padding-left: 10px;
+    margin-top: 12px;
+}
+
+.popup-container, .error-message {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.popup-subreddit {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.popup-subreddit-hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: light-dark(#aaa,#777);
+}
+
+button, input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid light-dark(#000, #fff);
+    border-radius: 6px;
+}
+
+input {
+    box-sizing: border-box;
+}
+
+
+/*      REDDIT SECTION      */
+
+.reddit-bar {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+}
+
+.reddit-section-hidden {
+    display: none;
+}
+
+.reddit-content {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.reddit-content-hidden {
+    display: none;
+}
+
+.reddit-lane {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+    border-bottom: 1px solid light-dark(#000,#fff);
+}
+
+.reddit-title {
+    font-size: clamp(.7rem, 2vw, 1rem);
+}
+
+
+/*      DROPDOWN SECTION       */
+
+.reddit-dropdown {
+    max-width: 540px;
+    margin: auto;
+    display: grid;
+    place-content: end;
+}
+
+.reddit-dropdown-hidden {
+    display: none;
+}
+
+.nav-item {
+    list-style: none;
+    margin-top: 2px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: light-dark(#bababa,#666);
+}
+
+
+/*      ERROR MESSAGE      */
+
+.error-message {
+    padding: 10px;
+}
+
+.error-message > p {
+    padding: 10px;
+    background-color: light-dark(#b12,#e33);
+    margin: auto;
+    width: fit-content;
+}
+
+.error-message-hidden {
+    display: none;
+}
+
+
+/*      LOADING STATE    */
+
+.wheel-container {
+    display: grid;
+    justify-items: center;
+    margin: 1rem auto;
+    place-content: center;
+}
+
+.wheel-container-hidden {
+    display: none;
+}
+
+.loading {
+    margin-top: 1.2em;
+    font-size: 1.2rem;
+}
+
+.wheel {
+    border: 7px solid light-dark(#6e6e6F, #CCCE);
+    border-radius: 50%;
+    border-left-color: transparent;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}

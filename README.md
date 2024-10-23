@@ -19,4 +19,5 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown)
 - [Task Tracker](https://roadmap.sh/projects/task-tracker-js)
 - [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo)
+- [Reddit Client](https://roadmap.sh/projects/reddit-client)
 - [Temperature Converter](https://roadmap.sh/projects/temperature-converter)
