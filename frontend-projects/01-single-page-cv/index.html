@@ -12,14 +12,17 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Isaac CV"/>
     <meta property="og:description" content="This web-page is about isaac alvarez curriculum vitae, he's looking for a web or frontend developer job and you will find more details about him in this page" />
-    <meta property="og:image" content="example/resume-template.png"/>
+    <meta property="og:image" content="img/resume-template.webp"/>
     <meta property="og:url" content="index.html"/>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <style>
+        :root {
+            color-scheme: light dark;
+        }
         body {
-            max-width: 55vw;
+            max-width: 50%;
             margin: 0 auto;
-            border: 3px solid black;
+            border: 3px solid light-dark(black,white);
             padding: 2rem;
             margin-top: 15px;
             font-family: sans-serif;
@@ -28,12 +31,12 @@
         hr {
             width: 70%;
             margin-left: 0;
-            border: 2px solid black;
+            border: 2px solid light-dark(black,white);
         }
 
         h2 {
             font-size: 1.2rem;
-            color: #309041;
+            color: light-dark(#309041, #50d552);
         }
 
         address {
@@ -45,12 +48,12 @@
         }
 
         h3 {
-            color: #1B72C2;
-            font-size: 1.1rem;
+            color: light-dark(#1B72C2, #5ca9FF);
+            font-size: 1rem;
         }
 
         h2,h3,p,a {
-            text-align: justify;
+            text-wrap:pretty;
         }
     </style>
 </head>
