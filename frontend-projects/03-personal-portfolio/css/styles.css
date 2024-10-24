@@ -2,26 +2,6 @@
 
 * {
     box-sizing: border-box;
-}
-
-body,
-nav,
-div,
-h1,
-h2,
-h3,
-p,
-ul,
-li,
-a,
-section,
-article,
-main,
-header,
-footer,
-q,
-cite,
-figcaption {
     margin: 0;
     padding: 0;
 }
@@ -88,7 +68,7 @@ body {
 }
 
 .header__p {
-    color: var(--figcaption-color);
+    color: var(--text-color);
 }
 
 .header__p--style {
@@ -294,6 +274,13 @@ h2 {
         border-bottom-width: 1px;
     }
 
+    .aside__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9px;
+        place-items: center;
+    }
+
     .main__h2 {
         text-align: center;
     }
@@ -343,7 +330,7 @@ h2 {
         --bg-color: #191c20;
         --primary-color: #284777;
         --secondary-color: #aac7ff;
-        --figcaption-color: var(--text-color);
+        --figcaption-color: var(--wrapper-bg);
         --text-color: #e2e2e9;
         --wrapper-bg: #2e3036;
     }
@@ -397,13 +384,16 @@ h2 {
     width: 100%;
 }
 
-.main__input, .main__select, .main__textarea {
+.main__input, .main__select, .main__textarea, .main__submit-button {
     background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.main__input, .main__select, .main__textarea {
     padding: 9px 0;
     padding-left: 6px;
     border-radius: 4px;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
 }
 
 .main__select {
@@ -417,6 +407,19 @@ h2 {
     letter-spacing: 2px;
     resize: none;
     padding-left: 4px;
+}
+
+.main__submit-button {
+    padding: 7px 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main__submit-button:hover {
+    background-color: var(--wrapper-bg);
+    color: var(--text-color);
+    border-color: var(--text-color);
+    transition: all .37s;
 }
 /* FORM SECTION END */
 
