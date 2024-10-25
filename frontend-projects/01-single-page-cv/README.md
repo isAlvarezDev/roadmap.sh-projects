@@ -5,7 +5,7 @@
 
 In this project, you are required to create a single-page CV (Curriculum Vitae) using only HTML. Your webpage should look like the following image:
 
-<img src="img/resume-template.webp" alt="cv">
+![Example of a cv](img/resume-template.webp)
 
 Key requirements for this project:
 + **Semantic HTML**: Use appropriate HTML tags to structure your CV.
