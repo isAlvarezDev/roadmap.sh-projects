@@ -1,0 +1,59 @@
+@import './node_modules/js-datepicker/dist/datepicker.min.css';
+
+:root {
+    color-scheme: light dark;
+    font-family: system-ui;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+#age, main, div, h1 {
+    margin: auto;
+}
+
+#age {
+    padding: 6px 14px;
+    min-width: 250px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.qs-datepicker {
+    background-color: light-dark(#eee,#111);
+    color: light-dark(#111,#eee);
+}
+
+.qs-controls {
+    background-color: light-dark(#555, #d3d3d3);
+    color: light-dark(#e3e3e3,#222)
+}
+
+.qs-arrow.qs-left:after {
+    border-right-color: light-dark(#ccc,#555);
+}
+
+.qs-arrow.qs-right:after {
+    border-left-color: light-dark(#ccc,#555);
+}
+
+.qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
+    background-color: light-dark(#35e, #48e);
+    color: #eee;
+}
+
+.qs-active {
+    background-color: light-dark(#727, #a5e);
+    color: #eee;
+}
