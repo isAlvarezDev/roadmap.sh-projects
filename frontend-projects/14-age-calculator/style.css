@@ -20,9 +20,20 @@
     margin: auto;
 }
 
+.input-wrapper {
+    position: relative;;
+}
+
 #age {
     padding: 6px 14px;
     min-width: 250px;
+}
+
+.input-svg {
+    position: absolute;
+    right: 6px;
+    bottom: 50%;
+    transform: translate(0, 50%);
 }
 
 main {
@@ -56,4 +67,16 @@ main {
 .qs-active {
     background-color: light-dark(#727, #a5e);
     color: #eee;
+}
+
+button {
+    display: block;
+    padding: 7px 1rem;
+    width: 250px;
+    margin: .7rem auto;
+}
+
+.message {
+    margin: 0;
+    text-align: center;
 }
