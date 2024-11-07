@@ -16,7 +16,6 @@ const picker = datepicker('#age', {
 function calculateAge() {
   let [birthMonth, birthDay, birthYear] = input.value.split("/").map(toNumber => +toNumber)
   const current = DateTime.now()
-
   
     if(birthMonth === current.month) {
       if(current.day >= birthDay) setParagraphText(current.year - birthYear, 0)
