@@ -16,6 +16,7 @@ Project ideas to take you from beginner to advanced in Frontend
 - [Cookie Consent](https://roadmap.sh/projects/cookie-consent)
 - [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea)
 - [Accordion](https://roadmap.sh/projects/accordion)
+- [Age Calculator](https://roadmap.sh/projects/age-calculator)
 - [Custom Dropdown](https://roadmap.sh/projects/custom-dropdown)
 - [Task Tracker](https://roadmap.sh/projects/task-tracker-js)
 - [GitHub Random Repository](https://roadmap.sh/projects/github-random-repo)
