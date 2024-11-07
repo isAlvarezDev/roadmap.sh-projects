@@ -16,4 +16,6 @@ You are required to develop an age calculator with the following features:
 
 This project will help you understand how to manipulate dates and times in JavaScript using [Luxon](https://www.npmjs.com/package/luxon). You’ll gain experience handling user input via a datepicker, performing date calculations, and designing a simple user interface.
 
-If you wanna run this project in your code editor, you should run in CLI `npm run dev` and then you must click in the host that the editor will give you.
+## Use
+
+If you wanna use this project, you should run the command `npm run dev` and then you must access the link that the CLI will give you
