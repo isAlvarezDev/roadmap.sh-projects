@@ -1,11 +1,11 @@
 # Image Grid Layout
-Create a grid layout of images using HTML and CSS.
+**Create a grid layout of images using HTML and CSS.**
 
 In this project, you are required to create a grid layout using HTML and CSS. You will be provided with six images that need to be arranged in a grid pattern based on the provided mockup. The primary focus of this project is to help you learn and practice the CSS Grid layout technique, which is essential for creating responsive and flexible web layouts.
 
 The goal of this project is to give you hands-on experience with CSS Grid, allowing you to create complex layouts with ease. Below is a rough mockup showing the grid layout you need to create along with the six images that you should use.
 
-<img src="img/image_grid_example.webp"/>
+![Example of a image grid](img/image_grid_example.webp)
 
 You can use the same images provided in the mockup or replace them with your own images. The grid layout should be responsive, meaning it should adapt to different screen sizes and maintain a visually appealing design.
 
@@ -18,10 +18,10 @@ You can use the same images provided in the mockup or replace them with your own
 
 Key learning objectives of this project include:
 
-- __Grid Structure__: Understand the fundamentals of CSS Grid, including defining grid containers, rows, columns, and how to place items within the grid.
+- **Grid Structure**: Understand the fundamentals of CSS Grid, including defining grid containers, rows, columns, and how to place items within the grid.
 
-- __Responsive Design__: Learn how to make the grid layout responsive so that it adapts to different screen sizes. This might involve changing the number of columns or the layout of the images based on the viewport width. 
+- **Responsive Design**: Learn how to make the grid layout responsive so that it adapts to different screen sizes. This might involve changing the number of columns or the layout of the images based on the viewport width. 
 
-- __Alignment and Spacing__: Explore how to align grid items and manage spacing between them to achieve a clean and visually appealing layout.
+- **Alignment and Spacing**: Explore how to align grid items and manage spacing between them to achieve a clean and visually appealing layout.
 
 By completing this project, you will gain confidence in using CSS Grid to create flexible and responsive layouts. You can further apply these skills to more complex projects as you continue learning web design and development.

@@ -1,6 +1,5 @@
 # Temperature Converter
-
-###### Build a temperature converter that converts between different units.
+**Build a temperature converter that converts between different units.**
 
 This project is designed to help you practice DOM manipulation, form handling, and basic calculations in JavaScript.
 
@@ -8,6 +7,6 @@ You will create a temperature converter that allows users to enter a temperature
 
 Here is a mockup of what the temperature converter might look like:
 
-<img src="img/temperature-converter-example.png"/>
+![Example of a temperature converter](img/temperature-converter-example.webp)
 
 This project will help you gain experience with handling user input, conditionally enabling form elements, and performing simple calculations using JavaScript.

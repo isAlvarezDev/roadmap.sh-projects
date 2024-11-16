@@ -1,5 +1,5 @@
 # Single-Page-CV
-###### Create a single-page HTML CV to showcase your career history.
+**Create a single-page HTML CV to showcase your career history.**
 
 > The goal of this project is to teach you how to create a structured, single-page CV using only HTML. You will focus on laying out your education, skills, and career history in a clean, semantic manner. Styling will be addressed in a later project.
 
@@ -14,7 +14,6 @@ Key requirements for this project:
 + **Favicon**: Add a favicon for your CV page.
 
 The structure of your CV should be easily understandable and ready for styling in a future project.
-
 
 ## Submission Checklist:
 
