@@ -1,9 +1,9 @@
 const textArea = document.querySelector("textarea")
 const p = document.querySelector("p")
 
-textArea.addEventListener("input", (e) => {
-    p.textContent = `${e.target.textLength}/250`
-    e.target.textLength == 250 
+textArea.addEventListener("input", event => {
+    p.textContent = `${event.target.textLength}/250`
+    event.target.textLength == 250 
     ? (
         textArea.classList.add("restringed-textarea"),
         p.classList.add("restringed-p")

@@ -39,10 +39,11 @@ p {
     font-size: 0.9rem;
 }
 
-.restringed-textarea:focus-visible {
+.restringed-textarea {
     border: none;
     color: var(--error-color);
-    outline: 2px solid var(--error-color);
+    outline: 1px solid var(--error-color);
+    border-radius: 2px;
 }
 
 .restringed-p {
