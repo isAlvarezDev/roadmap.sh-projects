@@ -9,7 +9,8 @@ body, div, svg, p {
 }
 
 body {
-    padding: 30px 20px;
+    height: 100dvh;
+    display: flex;
 }
 
 .default-state{

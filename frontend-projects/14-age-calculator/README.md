@@ -18,4 +18,4 @@ This project will help you understand how to manipulate dates and times in JavaS
 
 ## Use
 
-If you wanna use this project, you should run the command `npm run dev` and then you must access the link that the CLI will give you
+If you wanna use this project, you should run the command `npm i` to install all the dependencies, `npm run dev` and then you must access the link that the CLI will give you

@@ -11,6 +11,11 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 60dvh;
+    display: flex;
+}
+
 #app {
     display: flex;
     flex-direction: column;

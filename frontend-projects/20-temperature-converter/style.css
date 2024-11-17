@@ -3,6 +3,15 @@
     font-family: system-ui;
 }
 
+body {
+    display: flex;
+    height: 90dvh;
+}
+
+section {
+    margin: auto;
+}
+
 section, .temperature-result {
     text-align: center;
 }
@@ -14,7 +23,7 @@ input {
 
 .temperature-result {
     color: light-dark(#272, #7d5);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .input-temperature, #from-unit, #to-unit, .btn-convert {

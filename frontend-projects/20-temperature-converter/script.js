@@ -1,5 +1,6 @@
 const inputTemperature = document.querySelector(".input-temperature")
 let currentTemperature
+const section = document.querySelector('.section')
 const selectFromUnit = document.getElementById("from-unit")
 const selectToUnit = document.getElementById("to-unit")
 const buttonConverter = document.querySelector(".btn-convert")
@@ -41,7 +42,7 @@ function calculateTemperature(fromUnit, toUnit) {
 function showAnswer(result) {
     paragraphResult.textContent = `${currentTemperature} ${selectFromUnit.value} is ${result} ${selectToUnit.value}`
     paragraphResult.className = "temperature-result"
-    document.body.insertAdjacentElement("beforeend", paragraphResult)
+    section.insertAdjacentElement("beforeend", paragraphResult)
 }
 
 buttonConverter.addEventListener("click", () => {
