@@ -1,0 +1,17 @@
+:root {
+    --small-margin: 6px
+}
+
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.porcentage {
+    margin-left: var(--small-margin);
+}
+
+.rest {
+    margin-right: var(--small-margin);
+}
