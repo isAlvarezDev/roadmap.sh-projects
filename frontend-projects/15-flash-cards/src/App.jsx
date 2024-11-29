@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import data from './data/data.js'
+import Navegation from './components/Navegation/Navegation.jsx'
 import './App.css'
 
 function App() {
@@ -7,10 +8,8 @@ function App() {
 
   return (
     <>
-    <h1>{data[count].question}</h1>
-    <h2>{data[count].answer}</h2>
-    <button onClick={_ => setCount(prevCount => prevCount + 1)}>Next</button>
-    <button onClick={_ => setCount(prevCount => prevCount - 1)}>Previous</button>
+    <h1>Flash Cards</h1>
+    <Navegation />
     </>
   )
 }

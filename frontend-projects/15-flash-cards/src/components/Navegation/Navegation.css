@@ -1,0 +1,9 @@
+.navegation {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    display: block;
+    padding: 8px 14px;
+}
