@@ -1,0 +1,5 @@
+.card {
+    margin-top: 12px;
+    border: 2px solid light-dark(#393939,#e4e4e4);
+    padding: var(--small-margin);
+}

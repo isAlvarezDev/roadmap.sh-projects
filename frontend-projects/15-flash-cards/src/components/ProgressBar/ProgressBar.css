@@ -1,11 +1,13 @@
 :root {
-    --small-margin: 6px
+    --small-margin: 6px;
 }
 
 .progress-bar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid light-dark(#149, #28b);
+    padding: var(--small-margin);
 }
 
 .porcentage {

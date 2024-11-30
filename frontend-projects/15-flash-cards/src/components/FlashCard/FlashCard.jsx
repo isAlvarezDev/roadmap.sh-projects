@@ -3,6 +3,7 @@ import Panel from "../Panel/Panel.jsx";
 import QuestionNavegator from "../QuestionNavegator/QuestionNavegator.jsx";
 import data from "../../data/data.js";
 import { useState } from "react";
+import './FlashCard.css'
 
 export default function FlashCard() {
   const [index, setIndex] = useState(0);
@@ -26,8 +27,8 @@ export default function FlashCard() {
   return (
     <section>
       <h1>Flash Cards</h1>
-      <div>
         <ProgressBar index={index} porcentage={porcentage + '%'} />
+        <div className="card">
         <Panel
           canShowAnswer={showAnswer}
           answer={data[index].answer}
@@ -39,7 +40,7 @@ export default function FlashCard() {
           onNextClick={handleNextClick}
           canShowAnswer={showAnswer}
         />
-      </div>
+        </div>
     </section>
   );
 }

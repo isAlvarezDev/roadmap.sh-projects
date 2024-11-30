@@ -8,9 +8,9 @@ export default function QuestionNavegator({
 }) {
   return (
     <div className="navegation">
-      <button className="button" onClick={onPrevClick}>{"< Previous"}</button>
-      <button className="button" onClick={onClick}>{canShowAnswer ? "Hide Answer" : "Show Answer"}</button>
-      <button className="button" onClick={onNextClick}>{"Next >"}</button>
+      <span className="button" onClick={onPrevClick}>{"< Previous"}</span>
+      <span className="button" onClick={onClick}>{canShowAnswer ? "Hide Answer" : "Show Answer"}</span>
+      <span className="button" onClick={onNextClick}>{"Next >"}</span>
     </div>
   );
 }

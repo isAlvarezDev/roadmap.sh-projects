@@ -9,6 +9,14 @@
   align-content: center;
 }
 
-.message, .button, .progress-bar, .progress-bar-container {
+.button, .progress-bar, .progress-bar-container, .navegation, .card {
   border-radius: 6px;
+}
+
+.message, .navegation {
+  background-color: light-dark(#d7d7d7, #6c6c6c);
+}
+
+h1 {
+  margin: 8px 0;
 }
