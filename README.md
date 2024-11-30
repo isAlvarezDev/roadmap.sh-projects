@@ -1,4 +1,5 @@
 # Roadmap.sh Project Solutions
+
 Project ideas to take you from beginner to advanced in Frontend
 
 ## [Frontend Projects](https://roadmap.sh/frontend)
@@ -105,38 +106,45 @@ Project ideas to take you from beginner to advanced in Frontend
         </tr>
         <tr>
             <td>
+                <a href="frontend-projects/15-flash-cards/">
+                    <img src="frontend-projects/screenshots/15-flash-cards.webp" alt='Flash cards finished' />
+                </a>
+                <h2><a href='https://roadmap.sh/projects/flash-cards'>Flash Cards</a></h2>
+            </td>
+            <td>
                 <a href="frontend-projects/16-custom-dropdown/">
                     <img src="frontend-projects/screenshots/16-custom-dropdown.webp" alt='Custom Dropdown finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/custom-dropdown'>Custom Dropdown</a></h2>
             </td>
+        </tr>
+        <tr>
             <td>
                 <a href="frontend-projects/17-github-random-repository/">
                     <img src="frontend-projects/screenshots/17-github-random-repository.webp" alt='GitHub Random Repository finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/github-random-repo'>GitHub Random Repository</a></h2>
             </td>
-            <tr>
             <td>
                 <a href="frontend-projects/18-reddit-client/">
                     <img src="frontend-projects/screenshots/18-reddit-client.webp" alt='Reddit Client finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/reddit-client'>Reddit Client</a></h2>
             </td>
+        </tr>
+        <tr>
             <td>
                 <a href="frontend-projects/19-task-tracker/">
                     <img src="frontend-projects/screenshots/19-task-tracker.webp" alt='Task Tracker finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/task-tracker-js'>Task Tracker</a></h2>
             </td>
-            <tr>
-                <td>
+            <td>
                 <a href="frontend-projects/20-temperature-converter/">
                     <img src="frontend-projects/screenshots/20-temperature-converter.webp" alt='Temperature Converter finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/temperature-converter'>Temperature Converter</a></h2>
             </td>
-            </tr>
         </tr>
     </tbody>
 </table>

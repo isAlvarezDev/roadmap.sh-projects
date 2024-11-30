@@ -115,14 +115,8 @@ export default [
     },
     {
         id: 19,
-        question: 'What is Redux and when is it used?',
-        answer: 'Redux is a state management library used to manage the state of complex JavaScript applications. It provides a predictable and centralized way to manage your application data. It is used for large and complex applications, applications with many asynchronous actions and when you need a way to debug and track changes in state',
-        canShowAnswer: false
-    },
-    {
-        id: 20,
         question: 'What is TypeScript and what are its main advantages over JavaScript?',
-        answer: 'TypeScript is a superversion of JavaScript that adds features such as optional static typing and object-oriented programming in a more robust way. This means that you can define the data types of your variables and functions, which helps you: catch errors earlier, write cleaner code, and write more robust code.',
+        answer: 'TS is a superversion of JS that adds features such as optional static typing and object-oriented programming in a more robust way. This means you can define the data types of your variables and functions, which helps you: catch errors earlier, write cleaner code, and write more robust code.',
         canShowAnswer: false
     },
 ]

@@ -1,20 +1,20 @@
 import "./ProgressBar.css";
 
-export default function ProgressBar({ index, width }) {
+export default function ProgressBar({ index, porcentage }) {
     let progressBarStyles = {
-        width: width,
-        maxWidth: 500,
-        backgroundColor: "#04AA6D",
+        width: porcentage,
+        backgroundColor: "light-dark(#149, #28b)",
         color: "white",
-        transition: "width .4s, background-color .4s ease-in-out",
+        borderRadius: 4,
+        transition: "width .3s, background-color .3s ease-in-out",
     }
 
     return (
         <div className="progress-bar-container">
-            <div style={progressBarStyles}>
-                <p className="porcentage">{width}</p>
+            <div className="progress-bar" style={progressBarStyles} aria-valuenow={porcentage} aria-valuemax='100'>
+                <p className="porcentage">{porcentage}</p>
             </div>
-            <p className="rest">{index} of 25</p>
+            <span className="rest">{index + 1}/20</span>
         </div>
     )
 }

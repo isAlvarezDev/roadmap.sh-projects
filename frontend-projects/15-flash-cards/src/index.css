@@ -1,11 +1,14 @@
 :root {
-    color-scheme: light dark;
-    font-family: system-ui;
+  color-scheme: light dark;
+  font-family: system-ui;
 }
-  
-  #root {
-    max-width: 500px;
-    height: 100dvh;
-    margin: auto;
-    align-content: center;
+
+#root {
+  max-width: 500px;
+  margin: auto;
+  align-content: center;
+}
+
+.message, .button, .progress-bar, .progress-bar-container {
+  border-radius: 6px;
 }

@@ -15,3 +15,5 @@ You are required to develop a flash cards app with the following features:
 + Simple navigation to cycle through the flashcards
 
 This project will help you understand how to manage state and create reusable components. You can use any framework of your choice, such as React, Angular, or Vue.js, to build this project.
+
+If you wanna use the project, run the next commands in CLI: `npm i`, `npm run dev` and click the link you will receive from the CLI.

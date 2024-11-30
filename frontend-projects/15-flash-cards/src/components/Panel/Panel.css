@@ -1,0 +1,19 @@
+.message {
+    background-color: light-dark(#d7d7d7, #6c6c6c);
+    padding: 3.5rem;
+    border: 2px solid light-dark(#333,#eee);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 400px) {
+    .message {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .message {
+        padding: .9rem;
+    }
+}

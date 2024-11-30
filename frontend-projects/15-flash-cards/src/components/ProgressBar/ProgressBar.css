@@ -10,8 +10,10 @@
 
 .porcentage {
     margin-left: var(--small-margin);
+    font-size: .95rem;
 }
 
 .rest {
+    font-size: .8rem;
     margin-right: var(--small-margin);
 }
