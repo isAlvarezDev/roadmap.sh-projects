@@ -15,7 +15,7 @@ Project ideas to take you from beginner to advanced in Frontend
             </td>
             <td>
                 <a href="frontend-projects/02-basic-html-website/">
-                    <img style='object-fit:fill' src="frontend-projects/screenshots/02-basic-html-website.webp" alt='basic html website finished' />
+                    <img src="frontend-projects/screenshots/02-basic-html-website.webp" alt='basic html website finished' />
                 </a>
                 <h2><a href='https://roadmap.sh/projects/basic-html-website'>Basic Html Website</a></h2>
             </td>
